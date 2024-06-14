@@ -1,0 +1,22 @@
+body{
+    background: #D0D0D0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.login__container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login__form{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+    flex-direction: column;
+}
