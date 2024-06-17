@@ -1,8 +1,15 @@
+@import url(variables.css);
+
 .button{
     text-align: center;
-    padding: 5px 8px;
+    padding: var(--padding);
     border-radius: 5px;
+    background: var(--primario);
 }
 .btn__link{
     text-decoration: none;
+    display: inline-block;
+    width: var(--full);
+    height: var(--full);
+    color: var(--whithe);
 }

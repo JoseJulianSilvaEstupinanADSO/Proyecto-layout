@@ -1,4 +1,5 @@
 @import url(Componentes.css);
+@import url(variables.css);
 
 *{
     box-sizing: border-box;
@@ -7,14 +8,14 @@
 }
 
 body{
-    background: #D0D0D0;
+    background: var(--body);
     display: flex;
     align-items: center;
     height: 100vh;
 }
 .login__container{
     height: 50%;
-    width: 100%;
+    width: 80%;
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
@@ -24,7 +25,13 @@ body{
 .login__form{
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: var(--margin);
     width: 450px;
     flex-direction: column;
+}
+.btns__form{
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin);
 }
