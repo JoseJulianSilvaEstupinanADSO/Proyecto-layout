@@ -1,10 +1,72 @@
 @import url(variables.css);
 
+
+.nav__container{
+  width: var(--full);
+  height: 60px;
+  background: var(--primario);
+  display: flex;
+  align-items: center;
+
+}
+.nav__items{
+  width: 60%;
+  height: var(--full);
+}
+.nav__list{
+  display: flex;
+  justify-content: space-around;
+  height: var(--full);
+}
+.nav__item{
+  list-style: none;
+  width: 25%;
+  height: var(--full);
+  transition: 1s;
+  text-align: center;
+}
+.nav__link{
+  display: block;
+  align-content: center;
+  text-decoration: none;
+  color: var(--whithe);
+  height: 100%;
+  border-right: solid 1px var(--whithe);
+}
+.nav__item:hover{
+  background: var(--secundario);
+}
+.nav__logout{
+  font-size: 30px;
+  display: inline-flex;
+  justify-content: end;
+  width: 40%;
+  align-items: center;
+}
+.fa-solid{
+  font-size: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .button{
     text-align: center;
-    padding: var(--padding);
+    /* padding: var(--padding); */
+    height: 42px;
     border-radius: 5px;
     background: var(--primario);
+    transition: var(--transition);
 }
 .btn__link{
     text-decoration: none;
@@ -12,4 +74,20 @@
     width: var(--full);
     height: var(--full);
     color: var(--whithe);
+    align-content: center;
+}
+.btns__form{
+  width: 80%;
+  margin: var(--padding);
+}
+.button:hover{
+  background: var(--secundario);
+  color: var(--black);
+}
+.btn__link:hover{
+  color: var(--black);
+}
+.button--logout{
+  color: var(--whithe);
+  margin-right: var(--margin);
 }

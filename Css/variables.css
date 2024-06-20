@@ -3,8 +3,10 @@
   --primario: #5aa2ab;
   --secundario: #407076;
   --whithe: #fff;
+  --black: #000;
   --full: 100%;
   --padding: 8px;
+  --gap: 8px;
   --margin: 8px;
-
+  --transition: 1s;
 }
