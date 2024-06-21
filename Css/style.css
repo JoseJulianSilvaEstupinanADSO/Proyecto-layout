@@ -11,7 +11,7 @@
 }
 
 body{
-    background: var(--body);
+    background: var(--white);
     align-items: center;
     height: 100vh;
 }
@@ -42,4 +42,10 @@ body{
 }
 .mb-3{
   width: 80%;
+}
+.login__input{
+  border: solid 1px var(--primario);
+}
+.login__label{
+  color: var(--primario);
 }
