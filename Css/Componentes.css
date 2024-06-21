@@ -45,6 +45,7 @@
 .nav__link--titulo{
   width: 350px;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav__logout{
@@ -56,7 +57,7 @@
 }
 .fa-solid{
   font-size: 1.5rem;
-  padding-right: 30px;
+  /* padding-right: 30px; */
 }
 
 .menu{
@@ -99,7 +100,12 @@
 .menu__link:hover{
   color: var(--primario);
 }
-
+.icono__span {
+  display: inline-block;
+  width: 60px;
+  height: auto;
+  padding-right: 10px;
+}
 
 
 
@@ -132,7 +138,7 @@
 }
 .button:hover{
   background: var(--secundario);
-  color: var(--black);
+  color: var(--whithe);
 }
 .btn__link:hover{
   color: var(--black);
@@ -140,4 +146,17 @@
 .button--logout{
   color: var(--whithe);
   margin-right: var(--margin);
+}
+.button--color{
+  background: var(--whithe);
+  border: none;
+}
+.btn__link--color{
+  color: var(--black);
+}
+.button--color:hover{
+  background: var(--gray);
+}
+.btn__link--color:hover{
+  color: var(--whithe);
 }
