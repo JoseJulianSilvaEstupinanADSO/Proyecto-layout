@@ -1,0 +1,20 @@
+.container__factura{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 8px;
+    padding: var(--padding);
+}
+
+.fatura__buscar{
+    border: solid 1px var(--primario);
+    width: 50%;
+    height: 100%;
+}
+.factura__tabla{
+    border: solid 1px var(--primario);
+    width: 50%;
+    height: 100%;
+}
