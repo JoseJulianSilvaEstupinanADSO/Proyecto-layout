@@ -50,3 +50,8 @@ body{
 .login__label{
   color: var(--primario);
 }
+
+
+.container--size{
+  width: 97%;
+}
