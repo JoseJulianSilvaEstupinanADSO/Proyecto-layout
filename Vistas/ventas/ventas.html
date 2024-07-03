@@ -41,7 +41,7 @@
             <a href="ventas.html" class="menu__link menu__link--selec"><span class="icono__span"><i class="fa-solid fa-cart-shopping"></i></span>Ventas</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link" ><span class="icono__span"><i class="fa-solid fa-file-invoice"></i></span>Facturas</a>
+            <a href="../facturas/facturas.html" class="menu__link" ><span class="icono__span"><i class="fa-solid fa-file-invoice"></i></span>Facturas</a>
           </li>
           <li class="menu__item">
             <a href="" class="menu__link" ><span class="icono__span"><i class="fa-solid fa-boxes-stacked"></i></span>Inventario</a>
@@ -60,104 +60,90 @@
       <section class="container__factura">
         <div class="fatura__buscar">
           <form action="" class="form__datos">
-            <h2 class="cliente__title">Cliente</h2>
-            <div class="id__cliente">
-              <input type="number" name="codigoCliente" id="cdCliente" class="codigo__cliente login__input" placeholder="Codigo Cliente">
-              <button class="button buscar__cliente">Buscar</button>
-              <input type="text" class="codigo__cliente cliente__nombre" readonly>
+            <div class="buscar">
+              <h2 class="cliente__title">Cliente</h2>
+              <div class="id__cliente">
+                <input type="number" id="cdCliente" class="codigo__cliente login__input" placeholder="Codigo Cliente">
+                <button type="button" class="button buscar__cliente">Buscar</button>
+                <input type="text" class="codigo__cliente cliente__nombre" readonly>
+              </div>
+              <h2 class="cliente__title">Buscar Producto</h2>
+              <div class="id__cliente">
+                <input type="number" id="cdProducto" class="codigo__cliente login__input" placeholder="Codigo Producto" >
+                <button type="button" class="button buscar__cliente">Buscar</button>
+                <input placeholder="Nombre" type="text" class="codigo__cliente cliente__nombre" readonly>
+                <div class="datos__producto">
+                  <input placeholder="Precio" type="text" class="codigo__cliente cliente__nombre margin" readonly>
+                  <input placeholder="Cantidad" type="number" class="codigo__cliente cliente__nombre ">
+                  <select name="select" class="codigo__cliente cliente__nombre margin margin--top">
+                    <option value="value1">Seleccionar Talla</option>
+                  </select>
+                </div>
+              </div>
+              <div class="buscar__btn">
+                <button type="button" class="button button__agregar">Agregar Producto</button>
+                <button type="button" id="abrirModal" class="button button__agregar  button__agregar--color">Agragar Cliente</button>
+              </div>
             </div>
-            <h2 class="cliente__title">Buscar Producto</h2>
-            <div class="id__cliente">
-              <input type="number" name="codigoProducto" id="cdProducto" class="codigo__cliente login__input" placeholder="Codigo Producto" >
-              <button class="button buscar__cliente">Buscar</button>
-              <input type="text" class="codigo__cliente cliente__nombre" readonly>
-            </div>
-            <div class="buscar__btn">
-              <button class="button button__agregar">Agregar Producto</button>
-              <button class="button button__agregar  button__agregar--color">Agragar Cliente</button>
+            <div class="factura__tabla">
+              <div class="tabla">
+                <table class="tabla__factura">
+                    <thead class="tabla__th">
+                        <th>Id Producto</th>
+                        <th>Nombre</th>
+                        <th>Talla</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Acciones</th>
+                    </thead>
+                    <tbody class="tabla__tb">
+                        <tr class="tabla__fila">
+                            <td class="id__producto tabla__td">1</td>
+                            <td class="nombre__producto tabla__td">Camisa Real Madrid</td>
+                            <td class="talla__producto tabla__td">M</td>
+                            <td class="precio__producto tabla__td">120000</td>
+                            <td class="cantidad__producto tabla__td">1</td>
+                            <td class="tabla__td">
+                              <button type="button" class=" button__actions">Editar</button>
+                              <button type="button" class=" button__link">Eliminar</button>
+                            </td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+              <div class="generar__factura">
+                <button type="submit" class="button button__form">Generar Factura</button>
+                <button type="button" class="button__link button__link--size">Cancelar</button>
+              </div>
             </div>
           </form>
-        </div>
-        <div class="factura__tabla">
-          <div class="tabla">
-            <table class="tabla__factura">
-              <thead class="tabla__th">
-                  <th>Id Producto</th>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Cantidad</th>
-                  <th>Acciones</th>
-              </thead>
-              <tbody class="tabla__tb">
-                  <tr class="tabla__fila">
-                      <td class="id__producto tabla__td">1</td>
-                      <td class="nombre__producto tabla__td">Camisa Real Madrid</td>
-                      <td class="precio__producto tabla__td">120000</td>
-                      <td class="cantidad__producto tabla__td">1</td>
-                      <td class="tabla__td">
-                          <button type="button" class=" button__actions"  data-bs-toggle="modal" data-bs-target="#exampleModal" >Editar</button>
-                          <a type="button" class=" button__link">Eliminar</a>
-                      </td>
-                  </tr>
-                  <tr class="tabla__fila">
-                      <td class="id__producto tabla__td">1</td>
-                      <td class="nombre__producto tabla__td">Camisa Real Madrid</td>
-                      <td class="precio__producto tabla__td">120000</td>
-                      <td class="cantidad__producto tabla__td">1</td>
-                      <td class="tabla__td">
-                          <button type="button" class=" button__actions"  data-bs-toggle="modal" data-bs-target="#exampleModal" >Editar</button>
-                          <a type="button" class=" button__link">Eliminar</a>
-                      </td>
-                  </tr>
-                  <tr class="tabla__fila">
-                      <td class="id__producto tabla__td">1</td>
-                      <td class="nombre__producto tabla__td">Camisa Real Madrid</td>
-                      <td class="precio__producto tabla__td">120000</td>
-                      <td class="cantidad__producto tabla__td">1</td>
-                      <td class="tabla__td">
-                          <button type="button" class=" button__actions"  data-bs-toggle="modal" data-bs-target="#exampleModal" >Editar</button>
-                          <a type="button" class=" button__link">Eliminar</a>
-                      </td>
-                  </tr>
-                  <tr class="tabla__fila">
-                      <td class="id__producto tabla__td">1</td>
-                      <td class="nombre__producto tabla__td">Camisa Real Madrid</td>
-                      <td class="precio__producto tabla__td">120000</td>
-                      <td class="cantidad__producto tabla__td">1</td>
-                      <td class="tabla__td">
-                          <button type="button" class=" button__actions"  data-bs-toggle="modal" data-bs-target="#exampleModal" >Editar</button>
-                          <a type="button" class=" button__link">Eliminar</a>
-                      </td>
-                  </tr>
-                  <tr class="tabla__fila">
-                      <td class="id__producto tabla__td">1</td>
-                      <td class="nombre__producto tabla__td">Camisa Real Madrid</td>
-                      <td class="precio__producto tabla__td">120000</td>
-                      <td class="cantidad__producto tabla__td">1</td>
-                      <td class="tabla__td">
-                          <button type="button" class=" button__actions"  data-bs-toggle="modal" data-bs-target="#exampleModal" >Editar</button>
-                          <a type="button" class=" button__link">Eliminar</a>
-                      </td>
-                  </tr>
-                  <tr class="tabla__fila">
-                      <td class="id__producto tabla__td">1</td>
-                      <td class="nombre__producto tabla__td">Camisa Real Madrid</td>
-                      <td class="precio__producto tabla__td">120000</td>
-                      <td class="cantidad__producto tabla__td">1</td>
-                      <td class="tabla__td">
-                          <button type="button" class=" button__actions"  data-bs-toggle="modal" data-bs-target="#exampleModal" >Editar</button>
-                          <a type="button" class=" button__link">Eliminar</a>
-                      </td>
-                  </tr>
-
-              </tbody>
-          </table>
-          </div>
-          <div class="factura__butons">
-            
-          </div>
-        </div>
+        </div>        
       </section>
+      <div id="ventanaModal" class="container__modal">
+        <div class="contenido__modal">
+          <h2 class="modal__title">REGISTRAR CLIENTE</h2>
+          <form action="" class="form__modal">
+              <div class="div__form">
+                  <label for="" class="">Documento: </label>
+                  <input type="text" class="modal__input">
+              </div>
+              <div class="div__form">
+                  <label for="" class="">Nombre: </label>
+                  <input type="text" class="modal__input">
+              </div>
+              <div class="div__form">
+                  <label for="" class="">Telefono: </label>
+                  <input type="text" class="modal__input">
+              </div>
+              <div class="div__buttons">
+                  <button type="submit" class="button button__modal">Registrar</button>
+                  <button type="button" id="Cerrar__Modal" class="button--alert button__modal button__modal--alert">Cancelar</button>
+              </div>
+          </form>
+        </div>
+      </div>
+  
   </main>
+  <script src="../../js/ventas.js"></script>
 </body>
 </html>
