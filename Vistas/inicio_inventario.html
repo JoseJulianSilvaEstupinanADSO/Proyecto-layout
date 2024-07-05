@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../Css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
+  <title>Inicio</title>
 </head>
 <body>
   <header class="nav__header">
@@ -20,10 +20,8 @@
           </li>
         </ul>
       </div>
-      <div class="nav__logout">
-        <a class="button button--logout" href="../index.html">
-          <i class="fa-solid fa-right-from-bracket"></i>
-        </a>
+      <div class="menu__toggle">
+        <span class="menu__toggle-icon"><i class="fa-solid fa-bars"></i></span>
       </div>
     </nav>
   </header>
@@ -32,13 +30,13 @@
         <h1 class="menu__title">M E N U</h1>
         <ul class="menu__lista">
           <li class="menu__item menu__item--selec">
-            <a href="Inicio.html" class="menu__link menu__link--selec" ><span class="icono__span"><i class="fa-solid fa-house"></i></span>Home</a>
+            <a href="inicio_inventario.html" class="menu__link menu__link--selec" ><span class="icono__span"><i class="fa-solid fa-house"></i></span>Home</a>
           </li>
           <li class="menu__item">
             <a href="" class="menu__link" ><span class="icono__span"><i class="fa-solid fa-user-gear"></i></span>Mis Datos</a>
           </li>
           <li class="menu__item">
-            <a href="" class="menu__link" ><span class="icono__span"><i class="fa-solid fa-boxes-stacked"></i></span>Inventario</a>
+            <a href="/Vistas/inventario/inventario_usuario.html" class="menu__link" ><span class="icono__span"><i class="fa-solid fa-boxes-stacked"></i></span>Inventario</a>
           </li>
         </ul>
         <div class="menu__salir">
@@ -51,5 +49,6 @@
         </div>
       </section>
   </main>
+  <script src="../js/menu.js"></script>
 </body>
 </html>

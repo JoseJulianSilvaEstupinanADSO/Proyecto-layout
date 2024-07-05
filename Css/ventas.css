@@ -109,9 +109,6 @@
   padding: 5px;
   border-bottom: solid 1px var(--primario);
 }
-.tabla__tb{
-
-}
 .button__actions{
   background: var(--primario);
   color: var(--whithe);
@@ -147,7 +144,12 @@
   height: 42px;
 }
 .generar__factura{
+  justify-content: space-around;
+  width: 90%;
+  align-items: center;
   margin-top: var(--margin--icon);
+  display: flex;
+  gap: 20px;
 }
 .button__link--size:hover{
   background: rgb(248, 37, 37);
@@ -160,4 +162,78 @@
 }
 .margin--top{
   margin-top: 30px;
+}
+.total{
+  padding-bottom: var(--padding);
+  border-bottom: solid 1px var(--primario);
+  display: inline;
+  font-size: 2rem;
+}
+.modal__title--ventas{
+  text-align: center;
+}
+
+
+
+/*  Adaptacion de items para la vista Venatas*/
+
+@media (max-width: 1600px){
+  .form__datos{
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    height: auto;
+  }
+  .buscar{
+    width: 435px;
+  }
+  .factura__tabla{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .nav__header{
+    position: fixed;
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      z-index: 100000; 
+  }
+  .container{
+    height: 100vh;
+    margin-top: 70px;
+  }
+  .menu__lista{
+    height: auto;
+  }
+  .menu__salir{
+    height: 100px;
+  }
+  .tabla{
+    width: 100%;
+    padding-right: var(--padding);
+  }
+}
+
+@media (max-width: 580px){
+  .buttons__facturas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn__ventas{
+    height: auto;
+  }
+}
+
+@media (max-width: 550px){
+  .contenido__modal{
+    width: 90%;
+  }
+  .form__modal{
+    width: auto;
+  }
+  .cliente__nombre{
+    width: 150px;
+  }
 }

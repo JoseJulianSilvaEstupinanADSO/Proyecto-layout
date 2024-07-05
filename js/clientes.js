@@ -18,7 +18,7 @@ const $dom = document;
 const table = $dom.querySelector('.tabla--factura');
 
 table.addEventListener('click', function(event) {
-   if (event.target.classList.contains('FacturaDetalles')) {
+   if (event.target.classList.contains('button__tabla')) {
     const $modal = $dom.getElementById("ventanaModal");
     $modal.style.display = "block";
 

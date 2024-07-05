@@ -4,12 +4,19 @@
 Barra de navegacion -------------------------------------------------------
 */
 
+.title{
+  font-size: 2rem;
+  border-top: solid 1px var(--primario);
+  padding: 30px;
+}
+
 .nav__container{
   width: var(--full);
   height: 70px;
   background: var(--primario);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
 }
 .nav__items{
@@ -43,13 +50,12 @@ Barra de navegacion -------------------------------------------------------
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-.nav__logout{
-  font-size: 30px;
-  display: inline-flex;
-  justify-content: end;
-  width: 40%;
-  align-items: center;
+.menu__toggle{
+  margin-right: 15px;
+  display: none;
+}
+.menu__toggle-icon{
+  color: var(--whithe);
 }
 .fa-solid{
   font-size: 1.5rem;
@@ -195,6 +201,17 @@ Botones --------------------------------------------------------------------
   background: rgb(248, 37, 37);
   color: var(--whithe);
 }
+.button__buscar{
+  margin-left: var(--margin--icon);
+  background: var(--primario);
+  padding: 8px 25px;
+  color: var(--whithe);
+  border-radius: 4px;
+}
+.button__buscar:hover{
+  background: var(--whithe);
+  color: var(--primario);
+}
 /*-------------------------------------------------------------------------
 
 
@@ -325,12 +342,22 @@ MODAL ---------------------------------------------------------------------
   width: 95%;
   margin: 0 auto;
   padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .personas > p{
   font-size: 1rem;
   margin-bottom: 15px;
   font-weight: 400;
 }
+.total--facturas{
+  padding-bottom: var(--padding);
+  margin-right: 30px;
+  border-bottom: solid 1px var(--primario);
+}
+
+
+
 
 /*--------------------------------------------------------------------------
 */
@@ -418,7 +445,6 @@ MODAL ---------------------------------------------------------------------
   color: var(--whithe);
   border-radius: 4px;
 }
-
 
 /*-------------------------------------------------------------------------
 */

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../Css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
+  <title>Facturas</title>
 </head>
 <body>
   <header class="nav__header">
@@ -16,14 +16,12 @@
             <img class="logo" src="../../img/logo.png" alt="">
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link nav__link--titulo">PIMERA EQUIPACION</a>
+            <a href="../inicio_vendedor.html" class="nav__link nav__link--titulo">PIMERA EQUIPACION</a>
           </li>
         </ul>
       </div>
-      <div class="nav__logout">
-        <a class="button button--logout" href="../index.html">
-          <i class="fa-solid fa-right-from-bracket"></i>
-        </a>
+      <div class="menu__toggle">
+        <span class="menu__toggle-icon"><i class="fa-solid fa-bars"></i></span>
       </div>
     </nav>
   </header>
@@ -32,13 +30,13 @@
       <h1 class="menu__title">M E N U</h1>
       <ul class="menu__lista">
         <li class="menu__item">
-          <a href="../inicio.html" class="menu__link" ><span class="icono__span"><i class="fa-solid fa-house"></i></span>Home</a>
+          <a href="../inicio_vendedor.html" class="menu__link" ><span class="icono__span"><i class="fa-solid fa-house"></i></span>Home</a>
         </li>
         <li class="menu__item">
           <a href="" class="menu__link" ><span class="icono__span"><i class="fa-solid fa-user-gear"></i></span>Mis Datos</a>
         </li>
         <li class="menu__item">
-          <a href="../ventas/ventas.html" class="menu__link"><span class="icono__span"><i class="fa-solid fa-cart-shopping"></i></span>Ventas</a>
+          <a href="../ventas/ventas_vendedor.html" class="menu__link"><span class="icono__span"><i class="fa-solid fa-cart-shopping"></i></span>Ventas</a>
         </li>
         <li class="menu__item menu__item--selec">
           <a href="facturas.html" class="menu__link menu__link--selec"><span class="icono__span"><i class="fa-solid fa-file-invoice"></i></span>Facturas</a>
@@ -58,6 +56,7 @@
             <th class="th__item">Id Cliente</th>
             <th class="th__item">Id Venta</th>
             <th class="th__item">Id Usuario</th>
+            <th class="th__item">Total</th>
             <th class="th__item">Acciones</th>
           </thead>
           <tbody class="body__tabla">
@@ -67,6 +66,7 @@
                 <td class="td__tabla ">54</td>
                 <td class="td__tabla ">6</td>
                 <td class="td__tabla ">6</td>
+                <td class="td__tabla Total">1500000</td>
                 <td class="td__tabla">
                   <button type="button" class="button__tabla FacturaDetalles">Detalles</button>
                 </td>
@@ -77,6 +77,7 @@
               <td class="td__tabla ">54</td>
               <td class="td__tabla ">6</td>
               <td class="td__tabla ">6</td>
+              <td class="td__tabla Total">1500000</td>
               <td class="td__tabla">
                 <button type="button" class="button__tabla FacturaDetalles">Detalles</button>
               </td>
@@ -87,12 +88,20 @@
               <td class="td__tabla ">54</td>
               <td class="td__tabla ">6</td>
               <td class="td__tabla ">6</td>
+              <td class="td__tabla Total">1500000</td>
               <td class="td__tabla">
                 <button type="button"  class="button__tabla FacturaDetalles">Detalles</button>
               </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div class="container__buscar">
+        <div>
+            <label class="label__buscar" for="">Buscar Factura:</label>
+            <input class="input__buscar" type="text">
+            <button class="button__buscar">Buscar</button>
+        </div>
       </div>
     </section>
     <div id="ventanaModal" class="container__modal container__modal--facturas">
@@ -179,12 +188,16 @@
               </table>
           </div>
           <div class="personas">
+            <div>
               <p><b>Facturado por:</b> Jose Julian Silva </p>
               <p><b>Cliente:</b> Churro perez </p>
+            </div>
+              <h2 class="total total--facturas">TOTAL: 1000000</h2>
           </div>
       </div>
   </div>
   </main>
   <script src="../../js/factura.js"></script>
+  <script src="../../js/menu.js"></script>
 </body>
 </html>
