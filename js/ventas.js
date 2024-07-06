@@ -1,5 +1,7 @@
 
 
+const $dom = document
+
 //MODAL-----------------------------------------------------------------------
 
 const $modal = document.getElementById("ventanaModal");
@@ -27,3 +29,18 @@ window.addEventListener("click",function(event) {
 
 
 //----------------------------------------------------------------------------
+
+
+ document.addEventListener('DOMContentLoaded', function() {
+  const botonesEliminar = document.querySelectorAll('.BtnEliminar');
+
+  botonesEliminar.forEach(boton => {
+      boton.addEventListener('click', function() {
+          const fila = this.closest('tr'); // Selecciona la fila más cercana al botón clicado
+          fila.remove(); // Elimina la fila
+      });
+  });
+});
+
+
+
